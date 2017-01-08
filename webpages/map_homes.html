@@ -1,0 +1,267 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_8ed6a0139e844f2cb40ffdbca64d5aa6 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_8ed6a0139e844f2cb40ffdbca64d5aa6" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_8ed6a0139e844f2cb40ffdbca64d5aa6 = L.map('map_8ed6a0139e844f2cb40ffdbca64d5aa6', {
+                                           center:[27.7162385,85.4277276],
+                                           zoom: 12,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_a2dec8b3db80456c86d9e2c6aaac3057 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_8ed6a0139e844f2cb40ffdbca64d5aa6);
+
+        
+        
+            
+
+            var marker_88549f24f3144c2abafcecd98842e18a = L.marker(
+                [27.705584,85.418216],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_8ed6a0139e844f2cb40ffdbca64d5aa6);
+            
+        
+            
+
+                var icon_fb3462f6ffa8479ba7b0c2c4eb7bbf3b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_88549f24f3144c2abafcecd98842e18a.setIcon(icon_fb3462f6ffa8479ba7b0c2c4eb7bbf3b);
+            
+        
+            
+            var popup_f231e24e38f245d389cabd43c7185330 = L.popup({maxWidth: '300'});
+
+            
+                var html_8d71d1c065d14dd4acf371135c92ea51 = $('         <div id="html_8d71d1c065d14dd4acf371135c92ea51"                 style="width: 100.0%; height: 100.0%;">                 Mamaghar</div>                 ')[0];
+                popup_f231e24e38f245d389cabd43c7185330.setContent(html_8d71d1c065d14dd4acf371135c92ea51);
+            
+
+            marker_88549f24f3144c2abafcecd98842e18a.bindPopup(popup_f231e24e38f245d389cabd43c7185330);
+
+            
+        
+        
+            
+
+            var marker_dcb63099e7b54fcc892d98c0c1a104a9 = L.marker(
+                [27.645642,85.384611],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_8ed6a0139e844f2cb40ffdbca64d5aa6);
+            
+        
+            
+
+                var icon_11b8dd9cccb94787b708613d73715b4c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_dcb63099e7b54fcc892d98c0c1a104a9.setIcon(icon_11b8dd9cccb94787b708613d73715b4c);
+            
+        
+            
+            var popup_0612adc662ff4d82bf4ffa877fe12ea1 = L.popup({maxWidth: '300'});
+
+            
+                var html_a4996dfd1d1a4ad587639ffa4cfe3cb0 = $('         <div id="html_a4996dfd1d1a4ad587639ffa4cfe3cb0"                 style="width: 100.0%; height: 100.0%;">                 Lubhu_home</div>                 ')[0];
+                popup_0612adc662ff4d82bf4ffa877fe12ea1.setContent(html_a4996dfd1d1a4ad587639ffa4cfe3cb0);
+            
+
+            marker_dcb63099e7b54fcc892d98c0c1a104a9.bindPopup(popup_0612adc662ff4d82bf4ffa877fe12ea1);
+
+            
+        
+        
+            
+
+            var circle_marker_75d2156a17484fb5b38f31a3ef3c2a40 = L.circle(
+                [27.692936,85.327303],
+                500,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_8ed6a0139e844f2cb40ffdbca64d5aa6);
+            
+        
+            
+            var popup_8ea0c8b1388d4ae998b70027608fba2e = L.popup({maxWidth: '300'});
+
+            
+                var html_690622520924411fabf2e9d76d0663c4 = $('         <div id="html_690622520924411fabf2e9d76d0663c4"                 style="width: 100.0%; height: 100.0%;">                 BabarMahal_home</div>                 ')[0];
+                popup_8ea0c8b1388d4ae998b70027608fba2e.setContent(html_690622520924411fabf2e9d76d0663c4);
+            
+
+            circle_marker_75d2156a17484fb5b38f31a3ef3c2a40.bindPopup(popup_8ea0c8b1388d4ae998b70027608fba2e);
+
+            
+        
+        
+        
+        </script>
+        
